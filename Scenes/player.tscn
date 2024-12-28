@@ -108,7 +108,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1wqxp"]
 radius = 13.0
-height = 38.0
+height = 44.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
@@ -117,11 +117,11 @@ script = ExtResource("2_2w0hn")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 17)
 sprite_frames = SubResource("SpriteFrames_o28wp")
-animation = &"new_animation"
+animation = &"new_animation_1"
 autoplay = "new_animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-11, 18)
+position = Vector2(0, 15)
 shape = SubResource("CapsuleShape2D_1wqxp")
 
 [node name="Timer" type="Timer" parent="."]
